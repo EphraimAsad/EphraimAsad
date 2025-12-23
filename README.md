@@ -18,6 +18,7 @@ An end-to-end microbiology phenotype identification system combining:
 - Confidence-gated decision logic
 - Retrieval-Augmented Generation (RAG) for explainability
 - Species-level scoring within predicted genera
+- Has a Testing dataset comprised of ~8300 tests with over 300,000 total fields
 
 Designed to be **transparent, auditable, and extensible**, with explicit
 handling of uncertainty rather than forced predictions.
