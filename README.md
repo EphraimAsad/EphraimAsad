@@ -23,7 +23,7 @@ An end-to-end microbiology phenotype identification system combining:
 Designed to be **transparent, auditable, and extensible**, with explicit
 handling of uncertainty rather than forced predictions.
 
-➡️ Live demo available via Hugging Face Spaces- https://huggingface.co/spaces/EphAsad/BactAID-Demo
+➡️ Live demo available via Hugging Face Spaces at https://huggingface.co/spaces/EphAsad/BactAID-Demo
 ➡️ Full architecture and training workflow documented in the repository
 
 ### Tech Stack
