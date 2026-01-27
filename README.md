@@ -29,7 +29,7 @@ handling of uncertainty rather than forced predictions.
 ### Key Project: FireRAG – SOP Retrieval & Decision Support Assistant
 Creator & Lead Engineer | 2026 - Present
 FireRAG is a local, retrieval-augmented decision support system built for laboratory environments, designed to provide accurate, SOP-grounded answers to procedural questions. It combines FAISS indexing for semantic search with large language models (LLMs) to generate contextually relevant responses based on authoritative SOP documents. The application ensures traceability, auditability, and full control over SOP versions and updates.
-- Technical Implementation:
+Technical Implementation:
 -	Semantic Search: Integrated FAISS vector indexing to allow efficient, semantic retrieval of relevant SOP sections.
 -	LLM Integration: Developed a pipeline using Ollama’s local embeddings and LLMs for generating accurate answers, grounded strictly in SOP content, avoiding hallucination.
 -	UI/UX: Designed a dark, high-contrast UI optimized for laboratory environments, ensuring high readability and ease of use in low-light settings.
