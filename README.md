@@ -30,12 +30,12 @@ handling of uncertainty rather than forced predictions.
 Creator & Lead Engineer | 2026 - Present
 FireRAG is a local, retrieval-augmented decision support system built for laboratory environments, designed to provide accurate, SOP-grounded answers to procedural questions. It combines FAISS indexing for semantic search with large language models (LLMs) to generate contextually relevant responses based on authoritative SOP documents. The application ensures traceability, auditability, and full control over SOP versions and updates.
 - Technical Implementation:
-•	Semantic Search: Integrated FAISS vector indexing to allow efficient, semantic retrieval of relevant SOP sections.
-•	LLM Integration: Developed a pipeline using Ollama’s local embeddings and LLMs for generating accurate answers, grounded strictly in SOP content, avoiding hallucination.
-•	UI/UX: Designed a dark, high-contrast UI optimized for laboratory environments, ensuring high readability and ease of use in low-light settings.
-•	SOP Management: Implemented a robust system for rebuilding and managing SOP indices, ensuring deterministic behavior and version control.
-•	Local Execution: Deployed the app as a standalone executable (.exe), with the ability to update SOPs by rebuilding the index and repackaging the app.
-•	Data Handling: Built JSON-based metadata storage for efficient querying and indexing of SOP content.
+-	Semantic Search: Integrated FAISS vector indexing to allow efficient, semantic retrieval of relevant SOP sections.
+-	LLM Integration: Developed a pipeline using Ollama’s local embeddings and LLMs for generating accurate answers, grounded strictly in SOP content, avoiding hallucination.
+-	UI/UX: Designed a dark, high-contrast UI optimized for laboratory environments, ensuring high readability and ease of use in low-light settings.
+-	SOP Management: Implemented a robust system for rebuilding and managing SOP indices, ensuring deterministic behavior and version control.
+-	Local Execution: Deployed the app as a standalone executable (.exe), with the ability to update SOPs by rebuilding the index and repackaging the app.
+-	Data Handling: Built JSON-based metadata storage for efficient querying and indexing of SOP content.
 
 
 ### Tech Stack
