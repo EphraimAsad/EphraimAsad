@@ -1,58 +1,113 @@
 ## Hi, I’m Zain 👋
 
-I build applied machine learning systems that turn complex domain data
-into reliable, decision-support tools.
+I build **applied AI systems** that turn complex domain data into reliable, production-ready decision tools.
 
-### What I work on
-- Hybrid ML systems combining rules, structured features, and probabilistic models
-- Confidence-aware prediction pipelines (ranking, thresholds, decision bands)
-- NLP + RAG systems grounded in curated knowledge bases
-- Domain-specific AI for microbiology and laboratory workflows
+My work sits at the intersection of:
 
-### Featured Projects — **BactAI-D**
-An end-to-end microbiology phenotype identification system combining:
+- Applied Machine Learning
+- Agentic AI workflows
+- Retrieval-Augmented Generation (RAG)
+- Domain-driven system design
 
-- Rule-based and schema-driven parsers
+I focus on building systems that are **transparent, auditable, and designed for real-world use**, especially in regulated or safety-critical environments.
+
+---
+
+## 🚀 Featured Projects
+
+### 🧬 BactAID — Hybrid AI for Microbial Identification
+End-to-end phenotype identification system combining deterministic logic with machine learning.
+
+**Core architecture includes:**
+- Schema-driven and rule-based parsing
 - Tri-fusion feature aggregation
-- XGBoost genus-level prediction
-- Confidence-gated decision logic
-- Retrieval-Augmented Generation (RAG) for explainability
-- Species-level scoring within predicted genera
-- Has a Testing dataset comprised of ~8300 tests with over 300,000 total fields
+- XGBoost genus prediction
+- Confidence-aware decision logic
+- RAG-based explanation layer
+- Species scoring within predicted genera
 
-Designed to be **transparent, auditable, and extensible**, with explicit
-handling of uncertainty rather than forced predictions.
+📊 Built on ~8,300 laboratory tests with 300k+ structured fields.
 
-➡️ Live demo available via https://huggingface.co/spaces/EphAsad/BactAID-Demo
-- Full architecture and training workflow documented in the repository
+➡️ Live demo: https://huggingface.co/spaces/EphAsad/BactAID-Demo
 
-### Key Project: FireRAG – SOP Retrieval & Decision Support Assistant
-Creator & Lead Engineer | 2026 - Present
-FireRAG is a local, retrieval-augmented decision support system built for laboratory environments, designed to provide accurate, SOP-grounded answers to procedural questions. It combines FAISS indexing for semantic search with large language models (LLMs) to generate contextually relevant responses based on authoritative SOP documents. The application ensures traceability, auditability, and full control over SOP versions and updates.
-Technical Implementation:
--	Semantic Search: Integrated FAISS vector indexing to allow efficient, semantic retrieval of relevant SOP sections.
--	LLM Integration: Developed a pipeline using Ollama’s local embeddings and LLMs for generating accurate answers, grounded strictly in SOP content, avoiding hallucination.
--	UI/UX: Designed a dark, high-contrast UI optimized for laboratory environments, ensuring high readability and ease of use in low-light settings.
--	SOP Management: Implemented a robust system for rebuilding and managing SOP indices, ensuring deterministic behavior and version control.
--	Local Execution: Deployed the app as a standalone executable (.exe), with the ability to update SOPs by rebuilding the index and repackaging the app.
--	Data Handling: Built JSON-based metadata storage for efficient querying and indexing of SOP content.
+---
 
+### 🧠 DomainEmbedder — Domain Adaptive Embeddings
+Embedding system designed for multi-domain retrieval.
 
-### Tech Stack
-- Programming Languages: Python, JavaScript, VBA, SQL
-- Web Development: Flask, React, RESTful APIs, API Design, Frontend Development, Backend Development                                                                                                                - Advanced Modelling: Variational Autoencoders (VAEs), Latent Variable Models, Unsupervised Representation Learning
-- Machine Learning: XGBoost, Random Forest, Scikit-learn, Model Training, Feature Engineering, Hyperparameter Tuning, Ensemble Methods, Classification, Model Evaluation, Cross-Validation
-- Deep Learning & NLP: Transformers, FLAN-T5, BART, Fine-tuning, LoRA, Transfer Learning, Hugging Face Transformers
-- Computer Vision: YOLOv8, Object Detection, Image Classification, OpenCV
-- LLMs & RAG: Large Language Models, Retrieval-Augmented Generation, Prompt Engineering, Context Management, Output Validation
-- Data Engineering: Pandas, NumPy, Data Curation, ETL Pipelines, JSON Schema Design, Data Validation, Dataset Creation, FAISS
-- Database & Automation: Microsoft Access, Excel Macros, Database Development, Process Automation
-- Deployment & Systems: Flask, React, RESTful APIs, Web Application Architecture, Hugging Face Spaces, Gradio, Git/GitHub, Streamlit, Standalone Executables
-- Domain Expertise: Clinical Microbiology, Bacterial Identification, Biochemical Profiling, Phenotypic Analysis, Laboratory Workflows, ISO 17025, LIMS, Quality Control
+- LoRA-based adaptation
+- Reinforcement learning routing
+- Improved retrieval performance across domain-specific datasets
+- Built for RAG and knowledge-intensive workflows
 
+---
 
-### What I’m looking for
-Applied ML / AI Engineering roles where correctness, interpretability,
-and real-world constraints matter.
+### 🤖 Ephraim — Local Agentic Coding Assistant
+Privacy-first terminal agent designed for local LLM workflows.
+
+**Highlights:**
+- Dual-model planning and execution architecture
+- 60+ integrated tools
+- Multi-agent task coordination
+- Structured schema validation
+- Fully local execution via Ollama
+
+Built to explore reliable tool orchestration and agentic AI design.
+
+---
+
+### 🔎 FireRAG — Laboratory SOP Retrieval Assistant
+Local RAG system designed for regulated lab environments.
+
+- FAISS semantic retrieval
+- LLM grounding to authoritative SOP sources
+- Explicit citation output
+- Offline execution and version-controlled indexing
+
+Focused on traceability, auditability, and practical deployment.
+
+---
+
+## 🛠 Core Technical Stack
+
+**Applied ML & NLP**
+- Transformers, LoRA, RAG, FLAN-T5, BART
+- XGBoost, ensemble models, feature engineering
+- Confidence-aware prediction systems
+
+**Agentic & LLM Systems**
+- Tool orchestration
+- Multi-agent workflows
+- Prompt engineering
+- Local LLM deployment (Ollama)
+
+**Engineering & Deployment**
+- Python, JavaScript, SQL, VBA
+- Flask, React, APIs
+- Hugging Face Spaces, Streamlit, Gradio
+- FAISS, JSON schema pipelines
+
+**Computer Vision**
+- YOLOv8, object detection
+
+**Domain Expertise**
+- Clinical microbiology
+- Laboratory workflows
+- ISO 17025 environments
+
+---
+
+## 🎯 What I’m Looking For
+
+Applied AI / Automation Engineering roles where:
+
+- AI systems must work reliably in real environments
+- correctness and transparency matter
+- domain knowledge meets engineering
 
 Open to international opportunities and visa sponsorship.
+
+---
+
+### ⭐ Current Focus
+Building agentic AI systems that combine structured planning, tool use, and domain-aware reasoning.
