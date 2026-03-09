@@ -1,113 +1,162 @@
-## Hi, I’m Zain 👋
+# Zain Asad
 
-I build **applied AI systems** that turn complex domain data into reliable, production-ready decision tools.
+Applied AI & Automation Engineer building intelligent systems that combine machine learning, domain knowledge, and automation to solve real-world problems.
 
-My work sits at the intersection of:
+I design and deploy AI systems across scientific workflows, predictive modelling, retrieval systems, and autonomous agents. My work focuses on turning complex processes into reliable AI-powered tools that reduce manual effort and improve decision-making.
 
-- Applied Machine Learning
-- Agentic AI workflows
-- Retrieval-Augmented Generation (RAG)
-- Domain-driven system design
-
-I focus on building systems that are **transparent, auditable, and designed for real-world use**, especially in regulated or safety-critical environments.
+Currently working as a Senior Microbiology Analyst while building production-grade AI systems in my own projects.
 
 ---
 
-## 🚀 Featured Projects
+## Core Focus Areas
 
-### 🧬 BactAID — Hybrid AI for Microbial Identification
-End-to-end phenotype identification system combining deterministic logic with machine learning.
-
-**Core architecture includes:**
-- Schema-driven and rule-based parsing
-- Tri-fusion feature aggregation
-- XGBoost genus prediction
-- Confidence-aware decision logic
-- RAG-based explanation layer
-- Species scoring within predicted genera
-
-📊 Built on ~8,300 laboratory tests with 300k+ structured fields.
-
-➡️ Live demo: https://huggingface.co/spaces/EphAsad/BactAID-Demo
+- Applied Machine Learning Systems
+- Autonomous AI Agents & Workflow Automation
+- Retrieval Augmented Generation (RAG)
+- Predictive Modelling & Simulation
+- Domain-Specific AI Systems
+- Scientific AI & Laboratory Automation
 
 ---
 
-### 🧠 DomainEmbedder — Domain Adaptive Embeddings
-Embedding system designed for multi-domain retrieval.
+## Featured Projects
 
-- LoRA-based adaptation
-- Reinforcement learning routing
-- Improved retrieval performance across domain-specific datasets
-- Built for RAG and knowledge-intensive workflows
+### BactAID  
+Hybrid AI system for phenotype-based bacterial identification.
 
----
+- Combines deterministic microbiology logic, machine learning, and LLM reasoning
+- 8,700 curated laboratory records across 140 bacterial genera
+- Achieved **95.1% genus classification accuracy**
+- Full-stack architecture with Flask API and React frontend
 
-### 🤖 Ephraim — Local Agentic Coding Assistant
-Privacy-first terminal agent designed for local LLM workflows.
+Tech: Python, XGBoost, FLAN-T5, BART, Flask, React, Hugging Face
 
-**Highlights:**
-- Dual-model planning and execution architecture
-- 60+ integrated tools
-- Multi-agent task coordination
-- Structured schema validation
-- Fully local execution via Ollama
-
-Built to explore reliable tool orchestration and agentic AI design.
+Demo: https://huggingface.co/spaces/EphAsad/BactAID-Demo
 
 ---
 
-### 🔎 FireRAG — Laboratory SOP Retrieval Assistant
-Local RAG system designed for regulated lab environments.
+### Iapetus  
+Predictive food microbiology simulation platform for modelling *Listeria monocytogenes* growth and shelf-life risk.
 
-- FAISS semantic retrieval
-- LLM grounding to authoritative SOP sources
-- Explicit citation output
-- Offline execution and version-controlled indexing
+- Machine learning prediction of microbial growth curves
+- Monte Carlo simulation for uncertainty estimation
+- Sensitivity analysis to identify dominant environmental risk drivers
+- FastAPI backend with React frontend interface
 
-Focused on traceability, auditability, and practical deployment.
-
----
-
-## 🛠 Core Technical Stack
-
-**Applied ML & NLP**
-- Transformers, LoRA, RAG, FLAN-T5, BART
-- XGBoost, ensemble models, feature engineering
-- Confidence-aware prediction systems
-
-**Agentic & LLM Systems**
-- Tool orchestration
-- Multi-agent workflows
-- Prompt engineering
-- Local LLM deployment (Ollama)
-
-**Engineering & Deployment**
-- Python, JavaScript, SQL, VBA
-- Flask, React, APIs
-- Hugging Face Spaces, Streamlit, Gradio
-- FAISS, JSON schema pipelines
-
-**Computer Vision**
-- YOLOv8, object detection
-
-**Domain Expertise**
-- Clinical microbiology
-- Laboratory workflows
-- ISO 17025 environments
+Tech: Python, CatBoost, FastAPI, React, Monte Carlo Simulation, Predictive Modelling, Ollama
 
 ---
 
-## 🎯 What I’m Looking For
+### Ephraim  
+Privacy-first local autonomous coding and workflow agent.
 
-Applied AI / Automation Engineering roles where:
+- Planner/executor architecture separating reasoning from execution
+- Tool orchestration system with **60+ integrated tools**
+- Schema validation and error recovery for reliable task execution
+- Designed for fully local AI development using Ollama
 
-- AI systems must work reliably in real environments
-- correctness and transparency matter
-- domain knowledge meets engineering
-
-Open to international opportunities and visa sponsorship.
+Tech: Python, Ollama, Multi-Agent Systems, Tool Routing, JSON Schema
 
 ---
 
-### ⭐ Current Focus
-Building agentic AI systems that combine structured planning, tool use, and domain-aware reasoning.
+### DomainEmbedder  
+Domain-adaptive embedding model for multi-domain retrieval systems.
+
+- LoRA-based architecture enabling modular domain adapters
+- Reinforcement learning policy for automatic domain routing
+- Trained on NLI, semantic similarity, and paraphrase datasets
+- Achieved **2.7× improvement over baseline domain classification**
+
+Tech: PyTorch, Transformers, LoRA, Contrastive Learning, Reinforcement Learning
+
+Model: https://huggingface.co/EphAsad/DomainEmbedder
+
+---
+
+### FireSOP  
+AI-powered laboratory SOP retrieval assistant.
+
+- Hybrid RAG system combining FAISS vector search and BM25 keyword retrieval
+- Fine-tuned domain embeddings for laboratory terminology
+- Provides source-grounded procedural guidance for regulated environments
+
+Tech: Python, FAISS, BM25, Streamlit, Ollama
+
+---
+
+### FireAccess  
+Laboratory workflow automation platform built using Access VBA.
+
+- Parent-child database synchronization across 20+ laboratory test workflows
+- Automated colony count parsing and result aggregation
+- Media batch traceability and regulatory compliance tracking
+- Backup and recovery automation for laboratory data integrity
+
+Tech: VBA, Microsoft Access, SQL, Laboratory Automation
+
+---
+
+## Technical Skills
+
+### Programming
+Python, JavaScript, SQL, VBA
+
+### Machine Learning
+XGBoost, Random Forest, Transformers, Transfer Learning, LoRA, Model Evaluation
+
+### AI Systems
+RAG, LLM Orchestration, Domain-Specific Embeddings, Prompt Engineering
+
+### Data & ML Tools
+PyTorch, Scikit-learn, Pandas, NumPy, FAISS, BM25
+
+### Deployment
+FastAPI, Flask, React, Streamlit, Hugging Face Spaces
+
+### Infrastructure
+Git, GitHub Actions, Local LLMs (Ollama)
+
+### Domain Expertise
+Clinical Microbiology, Bacterial Identification, Phenotypic Analysis, ISO 17025 Laboratory Workflows
+
+---
+
+## Publications
+
+BactAI-D: A Hybrid, Confidence-Aware AI System for Phenotype-Based Bacterial Identification  
+Zenodo Preprint  
+https://doi.org/10.5281/zenodo.18089381
+
+DomainEmbedder v2.6: Domain-Adaptive Embedding Model for Cross-Domain Retrieval  
+Hugging Face Model Repository
+
+Decomposing Sex Differences in Mortality Across Age and Cause in England and Wales, 1915–2015  
+SocArXiv Preprint
+
+---
+
+## Links
+
+LinkedIn  
+https://linkedin.com/in/zain-asad-1998eph
+
+GitHub  
+https://github.com/EphraimAsad
+
+Hugging Face  
+https://huggingface.co/EphAsad
+
+Email  
+zainasad98@gmail.com
+
+---
+
+## Current Interests
+
+- Autonomous AI agents
+- AI-powered scientific tooling
+- Predictive modelling systems
+- Local-first AI infrastructure
+- AI-driven workflow automation
+
+Always open to interesting technical discussions and collaborations.
