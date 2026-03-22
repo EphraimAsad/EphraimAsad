@@ -25,6 +25,17 @@ Full-stack architecture with Flask API and React frontend.
 
 Tech: Python, XGBoost, FLAN-T5, BART, Flask, React, Hugging Face
 
+## Aegis
+
+Agentic academic literature review platform for research synthesis.
+
+Fully autonomous search and summarization across five academic databases.
+Deduplication, semantic search, and key finding extraction pipelines.
+Multi-source concurrent search with system-wide agentic decision-making.
+Enables researchers to identify themes and research gaps automatically.
+
+Tech: FastAPI, Next.js, PostgreSQL, Redis, Celery, Ollama, OpenAI, Anthropic, Google Gemini
+
 ## Iapetus
 
 Predictive food microbiology simulation platform for modelling Listeria monocytogenes growth and shelf-life risk.
@@ -79,15 +90,35 @@ Backup and recovery automation for laboratory data integrity.
 
 Tech: VBA, Microsoft Access, SQL, Laboratory Automation
 
+## Plutus
+
+Enterprise internal operations platform for financial data reconciliation and exception management.
+
+Production-grade financial reconciliation engine with four matching strategies: exact, tolerance, fuzzy, and scored.
+Exception management and reporting system for high-volume financial operations.
+Full audit trail, with anomaly detection and configurable escalation paths.
+
+Tech: Python, FastAPI, React, Celery, Redis, PostgreSQL, SQLAlchemy, GitHub Actions
+
 ## Technical Skills
 
-- Programming: Python, JavaScript, SQL, VBA
-- Machine Learning: XGBoost, Random Forest, Transformers, Transfer Learning, LoRA, Model Evaluation
-- AI Systems: RAG, LLM Orchestration, Domain-Specific Embeddings, Prompt Engineering
-- Data & ML Tools: PyTorch, Scikit-learn, Pandas, NumPy, FAISS, BM25
-- Deployment: FastAPI, Flask, React, Streamlit, Hugging Face Spaces
-- Infrastructure: Git, GitHub Actions, Local LLMs (Ollama)
-- Domain Expertise: Clinical Microbiology, Bacterial Identification, Phenotypic Analysis, ISO 17025 Laboratory Workflows
+Programming Languages:
+
+Python, JavaScript, SQL, VBA
+
+- Machine Learning & AI Systems: XGBoost, CatBoost, Random Forest, Transformers, LoRA fine-tuning, Contrastive Learning, Reinforcement Learning (A2C), Model Evaluation, Retrieval-augmented Generation (RAG), Large Language Models (LLM) orchestration, Domain-Specific Embeddings, Prompt Engineering
+
+- AI & ML Tools: PyTorch, Scikit-learn, Pandas, NumPy, FAISS, BM25, Hugging Face Transformers, Ollama, Sentence Transformers
+
+- Web Development & Frontend: React, Next.js, TypeScript, Vite, Tailwind CSS, Streamlit, shadcn/ui, Recharts, React Hook Form, Zod Validation
+
+- Backend & Deployment: FastAPI, Flask, SQLAlchemy, PostgreSQL, Redis, Celery, Docker, GitHub Actions, PyInstaller
+CI/CD pipelines, Testing (pytest, Vitest, Playwright), WebSocket integration for real-time updates
+
+- Infrastructure & Orchestration: Git, GitHub Actions, Local LLMs (Ollama), Docker Compose, FastAPI, PostgreSQL, Celery
+Parallel Processing (Celery, Redis), Multi-Agent Systems, Autonomous Agents, Agent-based AI systems, Task Automation, and Workflow Orchestration
+
+- Domain Expertise: Clinical Microbiology, Bacterial Identification, Phenotypic Analysis, ISO 17025 Laboratory Workflows, Food Safety, Predictive Microbiology, Financial Operations, Educational/Care Navigation AI
 
 ## Publications
 
