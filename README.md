@@ -1,141 +1,386 @@
 # Zain Asad
 
-## Applied AI & Automation Engineer | Building intelligent systems that combine machine learning, domain knowledge, and automation to solve real-world problems.
+### Scientific Software & Applied AI Engineer
+**Scientific Software · Computer Vision · ML Systems · Laboratory Automation · Edge AI**
 
-I design and deploy AI systems across scientific workflows, predictive modelling, retrieval systems, and autonomous agents. My work focuses on turning complex processes into reliable AI-powered tools that reduce manual effort and improve decision-making.
+I’m a Senior Microbiology Analyst whose work has increasingly moved into software engineering, laboratory automation and applied machine learning.
 
-Currently working as a Senior Microbiology Analyst while building production-grade AI systems in my own projects.
+I build systems that take scientific problems from **workflow understanding → architecture → implementation → model development → deployment → real-world use**.
 
-## Core Focus Areas
-- Applied Machine Learning Systems
-- Autonomous AI Agents & Workflow Automation
-- Retrieval Augmented Generation (RAG)
-- Predictive Modelling & Simulation
-- Domain-Specific AI Systems
-- Scientific AI & Laboratory Automation
-- Featured Projects
-- BactAID
+My professional work includes operational laboratory software used in ISO 17025 workflows, barcode and LIMS integrations, scientific calculation tools, audit and traceability systems, computer-vision deployment platforms and ML-assisted colony counting.
 
-## Hybrid AI system for phenotype-based bacterial identification.
+I’m particularly interested in building AI that solves real scientific and operational problems rather than AI for its own sake.
 
-Combines deterministic microbiology logic, machine learning, and LLM reasoning.
-Curated 8,700 laboratory records across 140 bacterial genera.
-Achieved 95.1% genus classification accuracy.
-Full-stack architecture with Flask API and React frontend.
+---
 
-Tech: Python, XGBoost, FLAN-T5, BART, Flask, React, Hugging Face
+## Featured Engineering Projects
 
-## Aegis
+### SatellaDet
+**Open-source PyTorch object detection framework**
 
-Agentic academic literature review platform for research synthesis.
+SatellaDet is a lightweight, anchor-free object detection framework designed for small-object detection and CPU-friendly ONNX deployment.
 
-Fully autonomous search and summarization across five academic databases.
-Deduplication, semantic search, and key finding extraction pipelines.
-Multi-source concurrent search with system-wide agentic decision-making.
-Enables researchers to identify themes and research gaps automatically.
+I built the framework to have direct control over the full detection pipeline rather than relying entirely on an existing object-detection framework.
 
-Tech: FastAPI, Next.js, PostgreSQL, Redis, Celery, Ollama, OpenAI, Anthropic, Google Gemini
+**Key features**
+- Custom PyTorch detector architecture
+- Lightweight split-transform-fuse backbone
+- Multi-scale P2 / P3 / P4 detection
+- Anchor-free LTRB box regression
+- Shared decoupled classification and regression towers
+- CIoU regression loss
+- Focal BCE classification loss
+- EMA training weights
+- Per-class precision, recall, F1, mAP50 and mAP50-95
+- Count-oriented evaluation metrics
+- Custom SatellaScore checkpoint selection
+- YOLO-format dataset support
+- 640, 960 and 1280 input resolutions
+- ONNX export and verification
+- CPU-oriented deployment design
 
-## Iapetus
+**Stack:** Python · PyTorch · ONNX · NumPy · pytest
 
-Predictive food microbiology simulation platform for modelling Listeria monocytogenes growth and shelf-life risk.
+[View SatellaDet →](https://github.com/EphraimAsad/SatellaDet)
 
-Machine learning prediction of microbial growth curves.
-Monte Carlo simulation for uncertainty estimation.
-Sensitivity analysis to identify dominant environmental risk drivers.
-FastAPI backend with React frontend interface.
+---
 
-Tech: Python, CatBoost, FastAPI, React, Monte Carlo Simulation, Ollama
+### Regulus / Sekhmet
+**Computer vision and ML deployment for microbiology**
 
-## Ephraim
+Regulus and Sekhmet form part of my work on ML-assisted microbiology colony counting.
 
-Privacy-first local autonomous coding and workflow agent.
+The goal is not simply to train object-detection models, but to build the infrastructure required to make them usable and traceable inside a laboratory workflow.
 
-Planner/executor architecture separating reasoning from execution.
-Tool orchestration system with 60+ integrated tools.
-Schema validation and error recovery for reliable task execution.
-Designed for fully local AI development using Ollama.
+**Regulus includes**
+- PostgreSQL as the central system of record
+- Model artefacts stored directly in PostgreSQL
+- Model versioning and traceability
+- ONNX inference
+- Analyst review and correction
+- Role-based permissions
+- Persistent sessions
+- Audit history
+- Model-specific confidence thresholds
+- Validation workflows
+- Crash recovery
+- Multi-user operation
 
-Tech: Python, Ollama, Multi-Agent Systems, Tool Routing, JSON Schema
+**Sekhmet extends the workflow into**
+- Camera-based plate capture
+- Barcode and sample routing
+- Colony detection and counting
+- Multiple media-specific detection models
+- Analyst-correctable inference
+- Model-version audit traceability
+- LIMS result export
+- CPU-only inference
 
-## DomainEmbedder
+Current models include work on:
+- TVC / PCA
+- Campylobacter / mCCDA
+- Enterobacteriaceae / VRBGA
+- E. coli / TBX/TBG
 
-Domain-adaptive embedding model for multi-domain retrieval systems.
+Several models have achieved precision, recall and mAP50 above 0.90 on validation data, with CPU inference suitable for laboratory deployment.
 
-LoRA-based architecture enabling modular domain adapters.
-Reinforcement learning policy for automatic domain routing.
-Trained on NLI, semantic similarity, and paraphrase datasets.
-Achieved 2.7× improvement over baseline domain classification.
+**Stack:** Python · PyTorch · ONNX Runtime · PostgreSQL · Computer Vision · SQL
 
-Tech: PyTorch, Transformers, LoRA, Contrastive Learning, Reinforcement Learning
+> Regulus and Sekhmet contain internal laboratory workflow components and are not fully public repositories.
 
-## FireSOP
+---
 
-AI-powered laboratory SOP retrieval assistant.
+### Satella Runner
+**Android edge-AI inference for object detection**
 
-Hybrid RAG system combining FAISS vector search and BM25 keyword retrieval.
-Fine-tuned domain embeddings for laboratory terminology.
-Provides source-grounded procedural guidance for regulated environments.
+Satella Runner is a native Android application for deploying ONNX object-detection models directly onto mobile hardware.
 
-Tech: Python, FAISS, BM25, Streamlit, Ollama
+Rather than treating mobile inference as a simple model wrapper, I built the application around the practical problems that appear when computer vision leaves the development workstation.
+
+**Current capabilities**
+- Native Android / Kotlin implementation
+- Jetpack Compose interface
+- CameraX integration
+- Gallery-image inference
+- Full-resolution camera inference
+- Live camera inference
+- ONNX Runtime Android
+- Support for compatible external ONNX detectors
+- 1280 × 1280 model support
+- Live camera zoom / magnification
+- Zoom-assisted image capture
+- Shared preprocessing across capture and live inference
+- Image orientation correction
+- Centre-square cropping
+- RGB → float32 NCHW preprocessing
+- Detection decoding and non-maximum suppression
+- Frame dropping to prevent live-inference backlog
+- Persistent model sessions
+- Local inference benchmarking
+- Mean / median / P95 latency measurements
+- Cross-platform parity debugging
+- Export of preprocessed tensors and raw model outputs for comparison against desktop inference
+
+The project is particularly useful for testing whether the same detection model behaves consistently between workstation and edge/mobile environments.
+
+**Stack:** Kotlin · Android · Jetpack Compose · CameraX · ONNX Runtime · Room · DataStore
+
+---
+
+### BactAI-D
+**Hybrid AI system for bacterial identification**
+
+BactAI-D explores phenotype-based bacterial identification using a combination of deterministic microbiology logic, machine learning and retrieval-backed explanation.
+
+The system accepts natural-language phenotype descriptions and converts them into structured microbiological features before combining multiple identification approaches.
+
+**Architecture**
+- Rule-based phenotype parser
+- Extended biochemical parser
+- ML-assisted parser
+- XGBoost genus classification
+- Deterministic reference-database matching
+- Adaptive ranking
+- Species-level matching
+- Retrieval-backed explanations
+- Local Ollama inference
+- Deterministic fallback when LLM output is unavailable or inappropriate
+- Flask API
+- React frontend
+
+A genus classifier was developed across approximately 140 bacterial genera and achieved 95.1% accuracy on its evaluation set.
+
+**Stack:** Python · XGBoost · Flask · React · FAISS · Hugging Face · Ollama
+
+[View BactAI-D →](https://github.com/EphraimAsad/BactAI-D)
+
+---
+
+### Iapetus
+**Predictive food microbiology platform**
+
+Iapetus is an experimental predictive microbiology platform for exploring microbial growth, uncertainty and shelf-life risk.
+
+The current version focuses on *Listeria monocytogenes* and combines machine-learning prediction with kinetic modelling.
+
+**Features**
+- ML-based microbial growth curves
+- Kinetic growth modelling
+- Monte Carlo uncertainty simulation
+- P10 / P50 / P90 estimates
+- Threshold exceedance probability
+- Sensitivity analysis
+- Risk-driver ranking
+- Automated decision-support outputs
+- Local LLM summaries
+- Deterministic fallback
+- FastAPI backend
+- React frontend
+- GitHub Actions CI
+
+The current dataset is synthetic-first and the platform is intended for exploratory modelling rather than regulatory shelf-life validation.
+
+**Stack:** Python · CatBoost · FastAPI · React · Monte Carlo Simulation · Ollama
+
+[View Iapetus →](https://github.com/EphraimAsad/Iapetus)
+
+---
+
+# Professional Engineering
+
+Alongside my role as a Senior Microbiology Analyst, I design, develop and maintain software used in operational laboratory workflows.
 
 ## FireAccess
+**Laboratory confirmation-management platform**
 
-Laboratory workflow automation platform built using Access VBA.
+FireAccess is an operational system built around microbiological confirmation workflows.
 
-Parent-child database synchronization across 20+ laboratory test workflows.
-Automated colony count parsing and result aggregation.
-Media batch traceability and regulatory compliance tracking.
-Backup and recovery automation for laboratory data integrity.
+It supports approximately **30,000 confirmation records and associated label operations per month** across around **30 confirmation routes**, with approximately **25 laboratory users**.
 
-Tech: VBA, Microsoft Access, SQL, Laboratory Automation
+Functionality includes:
+- Parent/child confirmation records
+- Barcode-driven workflows
+- Automated thermal label generation
+- Media batch tracking
+- Analyst traceability
+- Confirmation lifecycle management
+- Multi-stage microbiology workflows
+- Automated backup and recovery
+- Result logic
+- Audit-oriented record handling
 
-## Plutus
+The system was developed to remove repetitive manual handling while preserving laboratory traceability.
 
-Enterprise internal operations platform for financial data reconciliation and exception management.
+**Stack:** Microsoft Access · VBA · SQL · Barcode Integration · Thermal Printing
 
-Production-grade financial reconciliation engine with four matching strategies: exact, tolerance, fuzzy, and scored.
-Exception management and reporting system for high-volume financial operations.
-Full audit trail, with anomaly detection and configurable escalation paths.
+---
 
-Tech: Python, FastAPI, React, Celery, Redis, PostgreSQL, SQLAlchemy, GitHub Actions
+## CampyEnum
+**Campylobacter enumeration software**
 
-## Technical Skills
+CampyEnum was developed to simplify and standardise Campylobacter enumeration workflows.
 
-Programming Languages:
+**Capabilities**
+- Barcode-driven sample entry
+- ISO 10272-2 weighted enumeration calculations
+- Incomplete-sample handling
+- Automated laboratory labels
+- LIMS export
+- Audit history
+- Backup / archive workflows
 
-Python, JavaScript, SQL, VBA
+The system was formally adopted as a controlled laboratory program within the ISO 17025 quality system.
 
-- Machine Learning & AI Systems: XGBoost, CatBoost, Random Forest, Transformers, LoRA fine-tuning, Contrastive Learning, Reinforcement Learning (A2C), Model Evaluation, Retrieval-augmented Generation (RAG), Large Language Models (LLM) orchestration, Domain-Specific Embeddings, Prompt Engineering
+**Stack:** TypeScript · React · Electron · SQL · Laboratory Informatics
 
-- AI & ML Tools: PyTorch, Scikit-learn, Pandas, NumPy, FAISS, BM25, Hugging Face Transformers, Ollama, Sentence Transformers
+---
 
-- Web Development & Frontend: React, Next.js, TypeScript, Vite, Tailwind CSS, Streamlit, shadcn/ui, Recharts, React Hook Form, Zod Validation
+## Additional Laboratory Automation
 
-- Backend & Deployment: FastAPI, Flask, SQLAlchemy, PostgreSQL, Redis, Celery, Docker, GitHub Actions, PyInstaller
-CI/CD pipelines, Testing (pytest, Vitest, Playwright), WebSocket integration for real-time updates
+I have also developed smaller automation and analytical tools covering:
 
-- Infrastructure & Orchestration: Git, GitHub Actions, Local LLMs (Ollama), Docker Compose, FastAPI, PostgreSQL, Celery
-Parallel Processing (Celery, Redis), Multi-Agent Systems, Autonomous Agents, Agent-based AI systems, Task Automation, and Workflow Orchestration
+- SQL/LIMS reporting
+- automated result comparisons
+- Pseudomonas workflow automation
+- Excel/VBA workflow tools
+- sample-result transformation
+- confirmation-result processing
+- automated reporting
+- label generation
+- analyst timestamps and traceability
+- DET mapping and workflow routing
 
-- Domain Expertise: Clinical Microbiology, Bacterial Identification, Phenotypic Analysis, ISO 17025 Laboratory Workflows, Food Safety, Predictive Microbiology, Financial Operations, Educational/Care Navigation AI
+My focus is usually the same: identify repetitive or error-prone work and replace it with a system that is faster, traceable and easier for analysts to use.
 
-## Publications
+---
 
-- BactAI-D: A Hybrid, Confidence-Aware AI System for Phenotype-Based Bacterial Identification
-Zenodo Preprint
+# Additional Machine Learning Work
 
-- DomainEmbedder v2.6: Domain-Adaptive Embedding Model for Cross-Domain Retrieval
-Hugging Face Model Repository
+## Satella Language Models
 
-- Decomposing Sex Differences in Mortality Across Age and Cause in England and Wales, 1915–2015
-SocArXiv Preprint
+I publish language-model experiments and fine-tuned models through Hugging Face.
 
-## Current Interests
-Autonomous AI agents
-AI-powered scientific tooling
-Predictive modelling systems
-Local-first AI infrastructure
-AI-driven workflow automation
+My work has included:
+- Supervised fine-tuning
+- LoRA / QLoRA
+- DPO
+- Reasoning and coding datasets
+- Long-context training
+- GGUF quantisation
+- Evaluation harnesses
+- Local deployment
+- Mixture-of-Experts models
 
-Always open to interesting technical discussions and collaborations.
+Projects include models based on Qwen3 and Qwen3.5 architectures, including Satella-30B-A3B and smaller Satella variants.
+
+[View my Hugging Face profile →](https://huggingface.co/EphAsad)
+
+---
+
+## Mortality VAE
+
+I also built a reproducible machine-learning analysis exploring sex differences in mortality across England and Wales between 1915 and 2015.
+
+The project uses variational autoencoders to learn low-dimensional latent structures in age- and cause-specific mortality patterns.
+
+Work included:
+- PyTorch VAE implementation
+- historical data harmonisation
+- latent-space interpretation
+- sex-specific modelling
+- temporal robustness analysis
+- latent dimensionality analysis
+- synthetic decoding
+- publication-quality visualisation
+- reproducible analytical pipelines
+
+[View the project →](https://github.com/EphraimAsad/VAE-Of-Mortality)
+
+---
+
+# Core Technologies
+
+### Languages
+`Python` `TypeScript` `JavaScript` `Kotlin` `SQL` `VBA`
+
+### Machine Learning
+`PyTorch` `ONNX Runtime` `XGBoost` `CatBoost` `scikit-learn` `Transformers` `Hugging Face` `Unsloth`
+
+### Computer Vision
+`Object Detection` `Small-Object Detection` `Model Evaluation` `ONNX Deployment` `Edge AI`
+
+### Backend & Data
+`FastAPI` `Flask` `PostgreSQL` `SQLite` `SQLAlchemy`
+
+### Frontend & Applications
+`React` `Electron` `Jetpack Compose` `Android` `CameraX`
+
+### Engineering
+`Git` `GitHub Actions` `Docker` `pytest` `Vitest` `Playwright` `CI/CD`
+
+### Scientific & Laboratory Systems
+`ISO 17025` `LIMS Integration` `Barcode Workflows` `Audit Trails` `Laboratory Automation` `Predictive Microbiology`
+
+---
+
+# What I Like Building
+
+I’m most interested in problems where software, machine learning and domain knowledge have to work together.
+
+Examples include:
+
+- scientific software
+- laboratory automation
+- computer vision
+- edge and local AI
+- ML deployment systems
+- predictive modelling
+- scientific decision-support software
+- model validation and traceability
+- AI for life sciences and diagnostics
+
+I particularly enjoy taking an idea beyond the model or prototype stage and building the surrounding system needed for people to actually use it.
+
+---
+
+# Publications & Research
+
+### BactAI-D
+**BactAI-D: Hybrid, Confidence-Aware AI for Phenotype-Based Bacterial Identification**
+
+Zenodo  
+DOI: `10.5281/zenodo.18089381`
+
+### Mortality Modelling
+**Decomposing Sex Differences in Mortality Across Age and Cause in England and Wales, 1915–2015**
+
+Interpretable latent-variable modelling of long-term mortality patterns using variational autoencoders.
+
+---
+
+# Background
+
+**BSc (Hons) Biology**  
+Sheffield Hallam University, 2021
+
+Current professional background:
+- Food microbiology
+- Water microbiology
+- Environmental microbiology
+- Microbiological confirmation
+- Enumeration
+- Laboratory quality systems
+- Scientific software development
+- Laboratory automation
+
+---
+
+## Links
+
+- **GitHub:** [github.com/EphraimAsad](https://github.com/EphraimAsad)
+- **Hugging Face:** [huggingface.co/EphAsad](https://huggingface.co/EphAsad)
+- **LinkedIn:** [linkedin.com/in/zain-asad-1998eph](https://linkedin.com/in/zain-asad-1998eph)
+
+---
+
+I’m interested in opportunities across **Scientific Software Engineering, Applied AI, Machine Learning, Computer Vision and Laboratory Automation**, particularly where scientific understanding and engineering need to meet.
